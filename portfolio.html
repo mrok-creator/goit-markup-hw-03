@@ -19,27 +19,30 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <div class="container"></div>
   <body>
     <!--Шапка сторінки-->
     <header>
-      <div class="container">
+      <div class="container main-nav">
+        <!--Логотип-->
+        <a href="./index.html" class="logo link">
+          <span class="logo-primary">Web</span><span class="logo-secondary">Studio</span>
+        </a>
         <nav class="nav">
-          <!--Логотип-->
-          <a href="./index.html" class="logo link">
-            <span class="logo-primary">Web</span><span class="logo-secondary">Studio</span>
-          </a>
-          <!--Активне посилання contacts-->
+          <!--Активне посилання-->
           <ul class="local-nav list">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li><a href="./portfolio.html" class="current-link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="./index.html" class="current-link block">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link block">Портфолио</a></li>
+            <li class="item"><a href="" class="link block">Контакты</a></li>
           </ul>
         </nav>
         <!--Contacts in header-->
         <ul class="contacts list">
-          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com </a></li>
-          <li><a href="tel:+3809611111111" class="link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com </a>
+          </li>
+          <li class="item">
+            <a href="tel:+3809611111111" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -47,14 +50,16 @@
       <section class="gallery">
         <div class="container">
           <h1 class="gallery-title">Примеры работ</h1>
-          <ul class="list">
-            <li><button type="button" class="btn btn-secondary">Все</button></li>
-            <li><button type="button" class="btn btn-secondary">Веб-сайты</button></li>
-            <li><button type="button" class="btn btn-secondary">Приложения</button></li>
-            <li><button type="button" class="btn btn-secondary">Дизайн</button></li>
-            <li><button type="button" class="btn btn-secondary">Маркетинг</button></li>
+          <ul class="list filters">
+            <li class="item"><button type="button" class="btn btn-secondary">Все</button></li>
+            <li class="item"><button type="button" class="btn btn-secondary">Веб-сайты</button></li>
+            <li class="item">
+              <button type="button" class="btn btn-secondary">Приложения</button>
+            </li>
+            <li class="item"><button type="button" class="btn btn-secondary">Дизайн</button></li>
+            <li class="item"><button type="button" class="btn btn-secondary">Маркетинг</button></li>
           </ul>
-          <ul class="list">
+          <ul class="list card-set">
             <li class="gallery-card">
               <img src="./images/prj1.jpg" alt="веб-сайт на ноутбуке" width="370" />
               <h2 class="card-title">Технокряк</h2>

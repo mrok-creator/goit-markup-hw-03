@@ -22,23 +22,27 @@
   <body>
     <!--Шапка сторінки-->
     <header>
-      <div class="container">
+      <div class="container main-nav">
+        <!--Логотип-->
+        <a href="./index.html" class="logo link">
+          <span class="logo-primary">Web</span><span class="logo-secondary">Studio</span>
+        </a>
         <nav class="nav">
-          <!--Логотип-->
-          <a href="./index.html" class="logo link">
-            <span class="logo-primary">Web</span><span class="logo-secondary">Studio</span>
-          </a>
           <!--Активне посилання-->
           <ul class="local-nav list">
-            <li><a href="./index.html" class="current-link">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="./index.html" class="current-link block">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link block">Портфолио</a></li>
+            <li class="item"><a href="" class="link block">Контакты</a></li>
           </ul>
         </nav>
         <!--Contacts in header-->
         <ul class="contacts list">
-          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com </a></li>
-          <li><a href="tel:+3809611111111" class="link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com </a>
+          </li>
+          <li class="item">
+            <a href="tel:+3809611111111" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -60,26 +64,26 @@
         <!--features-->
 
         <div class="container">
-          <ul class="list">
-            <li>
+          <ul class="list feature">
+            <li class="item">
               <h3 class="feature-title">Внимание к деталям</h3>
               <p class="feature-description">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="feature-title">Пунктуальность</h3>
               <p class="feature-description">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="feature-title">Планирование</h3>
               <p class="feature-description">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="feature-title">Современные технологии</h3>
               <p class="feature-description">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -92,7 +96,7 @@
         <!--Our activities-->
         <div class="container">
           <h2 class="activities-title">Чем мы занимаемся</h2>
-          <ul class="list">
+          <ul class="list activity">
             <li>
               <img
                 src="images/img-box1.jpg"
@@ -122,7 +126,7 @@
         <!--Team-->
         <div class="container">
           <h2 class="team-title">Наша Команда</h2>
-          <ul class="list">
+          <ul class="list team-pro">
             <li class="team-card">
               <img src="./images/tc1.jpg" alt="Игорь Демьяненко - Product Designer" width="270" />
               <h3 class="card-title">Игорь Демьяненко</h3>
