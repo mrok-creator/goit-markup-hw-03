@@ -396,7 +396,21 @@ body {
 footer {
   background-color: var(--secondary-bg-color);
 }
+.bottom {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-box {
+  margin-bottom: 20px;
+}
 
+.footer-contacts > ul {
+  padding-left: 0;
+}
+
+.footer-contacts .contact + .contact {
+  margin-top: 9px;
+}
 .footer-contacts .link {
   color: var(--decoration-white-color);
 
