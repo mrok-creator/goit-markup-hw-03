@@ -9,6 +9,7 @@
   --decoration-white-color: rgba(255, 255, 255, 0.6);
   --border-color: #ececec;
 }
+
 /* html{
   box-sizing: border-box;
 }
@@ -26,6 +27,11 @@
   margin: 0 auto;
 }
 
+/* ---sectio--- */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* lists style */
 .list {
   margin: 0;
@@ -46,6 +52,7 @@
 
 .current-link {
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .current-link:hover,
@@ -103,10 +110,13 @@ body {
 }
 /* --------------HEADER-------------------- */
 /* header flexbox */
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--border-color);
 }
 
 /* logo */
@@ -189,7 +199,8 @@ body {
 /* -----------------------BODY_INDEX----------------------- */
 /* heroes */
 .hero {
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   background-color: var(--secondary-bg-color);
   color: var(--primary-white-color);
@@ -209,13 +220,10 @@ body {
 }
 
 /* features */
-.features {
-  margin-bottom: 94px;
-}
 
 .feature {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-left: 0;
 }
 
@@ -244,13 +252,10 @@ body {
 }
 
 /* activities */
-.activities {
-  margin-bottom: 94px;
-}
 
 .activity {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-left: 0;
 }
 
@@ -275,11 +280,12 @@ body {
 
 .team-pro {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-left: 0;
 }
 
 .team-title {
+  margin-top: 0;
   margin-bottom: 50px;
   color: var(--text-secondary-color);
 
@@ -318,12 +324,13 @@ body {
 /* -----------------------BODY_PORTFILIO--------------------- */
 /* gallery */
 .gallery {
-  margin-top: 51px;
-  padding-bottom: 120px;
-  background-color: var(--prtf-bg-color);
+  background-color: var(--primary-white-color);
 }
 
 .gallery .gallery-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--text-secondary-color);
 
   font-weight: 700;
@@ -370,10 +377,21 @@ body {
   margin-right: 0;
 }
 
-.gallery-card .card-title {
-  margin-top: 20px;
-  margin-bottom: 0;
+.card-container {
+  padding-top: 24px;
   padding-left: 24px;
+  padding-bottom: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-card .card-title {
+  margin-top: 0;
 
   color: var(--text-secondary-color);
 
@@ -384,8 +402,6 @@ body {
 }
 
 .gallery-card .defenition {
-  padding-left: 24px;
-  padding-bottom: 20px;
   margin-top: 4px;
 
   font-size: 16px;
@@ -394,12 +410,12 @@ body {
 
 /* -----------------------FOOTER----------------------- */
 footer {
-  background-color: var(--secondary-bg-color);
-}
-.bottom {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--secondary-bg-color);
 }
+
 .logo-box {
   margin-bottom: 20px;
 }
