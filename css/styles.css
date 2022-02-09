@@ -10,15 +10,27 @@
   --border-color: #ececec;
 }
 
-/* html{
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-} */
 /* -------------GLOBAL STYLES--------------- */
+/* ----Приховані елементи---- */
+ul,
+ol {
+  padding: 0px;
+  margin: 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* container */
 .container {
   width: 1200px;
@@ -149,7 +161,6 @@ body {
 .local-nav {
   display: flex;
   margin-left: 93px;
-  padding-left: 0;
 
   color: var(--text-secondary-color);
 
@@ -228,8 +239,13 @@ body {
   padding-left: 0;
 }
 
-.feature > .item + .item {
-  margin-left: 30px;
+.ability {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.ability:last-child {
+  margin-right: 0px;
 }
 
 .features .feature-title {
@@ -335,20 +351,6 @@ body {
   background-color: var(--primary-white-color);
 }
 
-.gallery .gallery-title {
-  margin-top: 0;
-  margin-bottom: 0;
-
-  opacity: 0;
-
-  color: var(--text-secondary-color);
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
 .filters {
   display: flex;
   justify-content: center;
@@ -368,7 +370,7 @@ body {
   flex-wrap: wrap;
   padding-left: 0;
 
-  margin-top: 34px;
+  margin-top: 50px;
 }
 
 .gallery-card {
@@ -451,7 +453,7 @@ footer {
   color: var(--primary-white-color);
 }
 
-.footer-contacts .contact :hover,
-.footer-contacts .contact :focus {
+.footer-contacts .contact:hover,
+.footer-contacts .contact:focus {
   color: var(--accent-color);
 }
